@@ -8,7 +8,7 @@ import pygame
 import os
 
 recognizer = sr.Recognizer()
-NEWS_API_KEY = "pub_ad781d68a382456f8705aaa39cd0bdf2"
+NEWS_API_KEY = "YOUR API KEY"
 
 def speak(text):
     tts = gTTS(text)
@@ -22,7 +22,7 @@ def speak(text):
     os.remove("temp.mp3")
 
 def aiProcess(command):
-    client = OpenAI(api_key ="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")
+    client = OpenAI(api_key ="YOUR API KEY")
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
